@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications - HAI Research Lab</title>
+  <style>
+    /* Inline CSS or link to external stylesheet */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; line-height: 1.6; }
+
+    header { background: #1e293b; color: white; padding: 1rem; }
+    nav { max-width: 1200px; margin: 0 auto; display: flex; gap: 2rem; }
+    nav a { color: white; text-decoration: none; }
+
+    main { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+    h1 { margin-bottom: 2rem; }
+
+    .publication {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 1.5rem;
+    }
+
+    .publication img {
+      width: 100%;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+
+    .publication h2 {
+      font-size: 1.25rem;
+      color: #1e293b;
+      margin-bottom: 0.5rem;
+    }
+
+    .authors { color: #64748b; margin-bottom: 0.5rem; }
+    .venue { color: #475569; font-weight: 500; margin-bottom: 1rem; }
+
+    .badges { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+    .badge {
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+    .badge-red { background: #fee2e2; color: #991b1b; }
+    .badge-gold { background: #fef3c7; color: #92400e; }
+
+    .links { display: flex; gap: 1rem; }
+    .links a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .links a:hover { text-decoration: underline; }
+
+    footer {
+      background: #f1f5f9;
+      padding: 2rem;
+      margin-top: 4rem;
+      text-align: center;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER: Must copy to EVERY page (index.html, team.html, etc.) -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="research.html">Research</a>
+      <a href="activities.html">Activities</a>
+      <a href="news.html">News</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Publications</h1>
+
+    <!-- Publication 1: Must copy this structure 8 times (once per paper) -->
+    <article class="publication">
+      <div>
+        <img src="assets/diffusion-cover.jpg" alt="Cover image for Diffusion Models paper">
+      </div>
+      <div>
+        <h2>High-Fidelity Image Generation with Latent Diffusion Models</h2>
+        <p class="authors">Emily Chen, David Wang, Michael Brown</p>
+        <p class="venue">NeurIPS 2024</p>
+        <div class="badges">
+          <span class="badge badge-red">Spotlight</span>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2112.10752" target="_blank">PDF</a>
+          <a href="https://github.com/CompVis/latent-diffusion" target="_blank">Code</a>
+          <a href="https://www.youtube.com/watch?v=diffusion-demo" target="_blank">Video</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Publication 2: Copy entire structure again -->
+    <article class="publication">
+      <div>
+        <img src="assets/transformer-cover.jpg" alt="Cover image for Attention paper">
+      </div>
+      <div>
+        <h2>Attention Is All You Need</h2>
+        <p class="authors">David Wang, Lisa Zhang</p>
+        <p class="venue">ICML 2023</p>
+        <div class="badges">
+          <span class="badge badge-gold">Best Paper Award</span>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/1706.03762" target="_blank">PDF</a>
+          <a href="https://github.com/tensorflow/tensor2tensor" target="_blank">Code</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Publication 3: Copy again -->
+    <article class="publication">
+      <div>
+        <img src="assets/ethics-cover.jpg" alt="Cover image for Ethics paper">
+      </div>
+      <div>
+        <h2>Ethical Considerations in Large Language Models</h2>
+        <p class="authors">Prof. Sarah Johnson, Emily Chen</p>
+        <p class="venue">FAccT 2024</p>
+        <div class="links">
+          <a href="https://arxiv.org/abs/..." target="_blank">PDF</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Publication 4: Copy again -->
+    <article class="publication">
+      <div>
+        <img src="assets/rl-cover.jpg" alt="Cover image for RL paper">
+      </div>
+      <div>
+        <h2>Deep Reinforcement Learning for Robotics</h2>
+        <p class="authors">Michael Brown, David Wang, Alex Kim</p>
+        <p class="venue">IROS 2023</p>
+        <div class="links">
+          <a href="https://arxiv.org/abs/..." target="_blank">PDF</a>
+          <a href="https://github.com/..." target="_blank">Code</a>
+          <a href="https://robot-demo.com" target="_blank">Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Publication 5: Copy again -->
+    <article class="publication">
+      <div>
+        <img src="assets/vision-cover.jpg" alt="Cover image for Vision paper">
+      </div>
+      <div>
+        <h2>Self-Supervised Learning for Computer Vision</h2>
+        <p class="authors">Lisa Zhang, Emily Chen</p>
+        <p class="venue">CVPR 2023</p>
+        <div class="badges">
+          <span class="badge badge-red">Oral Presentation</span>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/..." target="_blank">PDF</a>
+          <a href="https://github.com/..." target="_blank">Code</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Publication 6: Copy again -->
+    <article class="publication">
+      <div>
+        <img src="assets/nlp-cover.jpg" alt="Cover image for NLP paper">
+      </div>
+      <div>
+        <h2>Large Language Models for Scientific Discovery</h2>
+        <p class="authors">Alex Kim, Prof. Sarah Johnson</p>
+        <p class="venue">Nature Machine Intelligence 2024</p>
+        <div class="links">
+          <a href="https://nature.com/..." target="_blank">PDF</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Publication 7: Copy again -->
+    <article class="publication">
+      <div>
+        <img src="assets/graph-cover.jpg" alt="Cover image for Graph paper">
+      </div>
+      <div>
+        <h2>Graph Neural Networks for Drug Discovery</h2>
+        <p class="authors">Emily Chen, Michael Brown</p>
+        <p class="venue">NeurIPS 2022</p>
+        <div class="links">
+          <a href="https://arxiv.org/abs/..." target="_blank">PDF</a>
+          <a href="https://github.com/..." target="_blank">Code</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Publication 8: Copy again -->
+    <article class="publication">
+      <div>
+        <img src="assets/multimodal-cover.jpg" alt="Cover image for Multimodal paper">
+      </div>
+      <div>
+        <h2>Multimodal Learning with Vision and Language</h2>
+        <p class="authors">David Wang, Lisa Zhang, Alex Kim</p>
+        <p class="venue">EMNLP 2023</p>
+        <div class="links">
+          <a href="https://arxiv.org/abs/..." target="_blank">PDF</a>
+          <a href="https://github.com/..." target="_blank">Code</a>
+          <a href="https://demo.multimodal.ai" target="_blank">Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <!--
+      PROBLEM 1: If you want to change the publication card design,
+                 you must edit ALL 8 copies above.
+
+      PROBLEM 2: If you add a new field (e.g., "DOI"),
+                 you must edit ALL 8 copies.
+
+      PROBLEM 3: Easy to make typos in class names
+                 (e.g., "publiction" instead of "publication")
+
+      PROBLEM 4: This is just the ENGLISH version.
+                 You need 7 more copies for other languages:
+                 - publications-zh.html (Chinese)
+                 - publications-es.html (Spanish)
+                 - publications-fr.html (French)
+                 - publications-de.html (German)
+                 - publications-ja.html (Japanese)
+                 - publications-ko.html (Korean)
+                 - publications-ar.html (Arabic)
+    -->
+  </main>
+
+  <!-- FOOTER: Must copy to EVERY page -->
+  <footer>
+    <p>&copy; 2024 HAI Research Lab. All rights reserved.</p>
+    <p>Contact: contact@hailab.edu</p>
+  </footer>
+
+  <!--
+    TOTAL FILE COUNT FOR YOUR SITE:
+
+    Pages:
+    - index.html × 8 languages = 8 files
+    - publications.html × 8 languages = 8 files
+    - team.html × 8 languages = 8 files
+    - research.html × 8 languages = 8 files
+    - activities.html × 8 languages = 8 files
+    - news.html × 8 languages = 8 files
+    - patents.html × 8 languages = 8 files
+    - honors.html × 8 languages = 8 files
+    - software.html × 8 languages = 8 files
+
+    Total: 72 HTML files (minimum)
+
+    If you update navigation: Edit 72 files
+    If you change footer: Edit 72 files
+    If you redesign publication cards: Edit 8 files × 8 languages = 64 edits
+
+    WITH ASTRO:
+    - Edit 1 component for navigation
+    - Edit 1 component for footer
+    - Edit 1 component for publication cards
+    - Content: 8 markdown files (auto-translated)
+  -->
+</body>
+</html>
